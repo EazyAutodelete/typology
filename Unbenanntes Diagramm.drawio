@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0" version="24.7.16">
   <diagram name="Seite-1" id="dqsLzKi4FgeO7Q9_Gg5U">
-    <mxGraphModel dx="2253" dy="781" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1883" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,7 +13,7 @@
         <mxCell id="J-38YoUWlMMychKlFMu8-65" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="2" target="J-38YoUWlMMychKlFMu8-62">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="2" value="Gateway" style="whiteSpace=wrap;strokeWidth=2;labelBackgroundColor=none;labelBorderColor=none;horizontal=1;fontSize=13;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="2" value="DC Gateway" style="whiteSpace=wrap;strokeWidth=2;labelBackgroundColor=none;labelBorderColor=none;horizontal=1;fontSize=13;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="-390" y="206" width="142" height="49" as="geometry" />
         </mxCell>
         <mxCell id="6" value="Switch3" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
@@ -81,14 +81,6 @@
         </mxCell>
         <mxCell id="27" value="Endpoint12" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="1023" y="716" width="140" height="49" as="geometry" />
-        </mxCell>
-        <mxCell id="31" value="1G" style="curved=1;startArrow=none;endArrow=block;exitX=0.61;exitY=0.01;entryX=0.21;entryY=0.99;" parent="1" source="J-38YoUWlMMychKlFMu8-60" target="6" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="191" y="151" />
-              <mxPoint x="573" y="151" />
-            </Array>
-          </mxGeometry>
         </mxCell>
         <mxCell id="36" value="1G" style="curved=1;startArrow=none;endArrow=block;exitX=0.63;exitY=-0.01;entryX=0;entryY=0.29;" parent="1" target="6" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -244,13 +236,37 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="J-38YoUWlMMychKlFMu8-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="J-38YoUWlMMychKlFMu8-57" target="J-38YoUWlMMychKlFMu8-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="J-38YoUWlMMychKlFMu8-81" value="AMQP: GW Events Queue #0" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="J-38YoUWlMMychKlFMu8-72">
+          <mxGeometry x="0.0238" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="J-38YoUWlMMychKlFMu8-57" value="Worker #0 (Shards 0-3)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="-160" y="40" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="J-38YoUWlMMychKlFMu8-61" value="Worker #2 (Shards 0-3)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="J-38YoUWlMMychKlFMu8-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="J-38YoUWlMMychKlFMu8-61" target="J-38YoUWlMMychKlFMu8-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="J-38YoUWlMMychKlFMu8-79" value="AMQP: GW Events Queue #2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="J-38YoUWlMMychKlFMu8-74">
+          <mxGeometry x="0.0303" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J-38YoUWlMMychKlFMu8-61" value="Worker #2 (Shards 8-11)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="-160" y="259" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="J-38YoUWlMMychKlFMu8-62" value="Worker #3&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;(Shards 0-3)&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="J-38YoUWlMMychKlFMu8-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J-38YoUWlMMychKlFMu8-62" target="J-38YoUWlMMychKlFMu8-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="J-38YoUWlMMychKlFMu8-76" value="AMQP: GW Events Queue#3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="J-38YoUWlMMychKlFMu8-75">
+          <mxGeometry x="0.1569" y="1" relative="1" as="geometry">
+            <mxPoint x="-13" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J-38YoUWlMMychKlFMu8-62" value="Worker #3&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;(Shards 12-15)&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="-160" y="379" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="J-38YoUWlMMychKlFMu8-63" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="2" target="J-38YoUWlMMychKlFMu8-60">
@@ -260,8 +276,28 @@
             <mxPoint x="634" y="107" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="J-38YoUWlMMychKlFMu8-60" value="Worker #1 (Shards 0-3)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="J-38YoUWlMMychKlFMu8-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J-38YoUWlMMychKlFMu8-60" target="J-38YoUWlMMychKlFMu8-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="J-38YoUWlMMychKlFMu8-80" value="AMQP: GW Events Queue #1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="J-38YoUWlMMychKlFMu8-73">
+          <mxGeometry x="0.0174" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J-38YoUWlMMychKlFMu8-60" value="Worker #1 (Shards 4-7)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="-160" y="140" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="J-38YoUWlMMychKlFMu8-68" value="Bot #0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="230" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="J-38YoUWlMMychKlFMu8-69" value="Bot #1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="230" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="J-38YoUWlMMychKlFMu8-70" value="Bot #2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="230" y="259" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="J-38YoUWlMMychKlFMu8-71" value="Bot #3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="230" y="379" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
