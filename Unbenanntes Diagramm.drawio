@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0" version="24.7.16">
   <diagram name="Seite-1" id="dqsLzKi4FgeO7Q9_Gg5U">
-    <mxGraphModel dx="2728" dy="2210" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1619" dy="1603" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -239,6 +239,9 @@
         </mxCell>
         <mxCell id="J-38YoUWlMMychKlFMu8-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="J-38YoUWlMMychKlFMu8-155" source="J-38YoUWlMMychKlFMu8-156" target="J-38YoUWlMMychKlFMu8-157">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="J-38YoUWlMMychKlFMu8-161" value="Bot Process Cluster&lt;div&gt;- jeder Bot Process connected entsprechend seiner ID zu einem RabbitMQ Node + einem Redis Node&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="-120" width="160" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
